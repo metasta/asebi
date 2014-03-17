@@ -2,7 +2,7 @@
 basedir=$(cd $(dirname "$0"); dirname $(pwd))
 ipafont="${basedir}/src/ipamjm.ttf"
 
-test -r $ipafont || (echo "$ipafont not found" >&2; exit 1)
+test -r $ipafont || { echo "$ipafont not found" >&2; exit 1; }
 
 echo_ipacopyright()
 {
