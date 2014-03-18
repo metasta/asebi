@@ -44,14 +44,14 @@ _regular.info: src/fontinfo.txt
 _regular.name: _regular.otf
 	sh bin/sfntedit.sh -x name _regular.otf
 
-_regular.otf: _regular.cff _features fontMenuNameDB
-	sh bin/makeotf.sh -f _regular.cff -ff _features -mf fontMenuNameDB -o _regular.otf
+_regular.otf: _regular.cff _features _fontMenuNameDB
+	sh bin/makeotf.sh -f _regular.cff -ff _features -mf _fontMenuNameDB -o _regular.otf
 
 #_bold.name: _bold.otf
 #	sh bin/sfntedit.sh -x name _bold.otf
 
-#_bold.otf: _bold.cff _features fontMenuNameDB
-#	sh bin/makeotf.sh -b -f _bold.cff -ff _features -mf fontMenuNameDB -o _bold.otf
+#_bold.otf: _bold.cff _features _fontMenuNameDB
+#	sh bin/makeotf.sh -b -f _bold.cff -ff _features -mf _fontMenuNameDB -o _bold.otf
 
 _min.map:
 	echo "mergeFonts\n0\t.notdef" > _min.map
@@ -87,10 +87,9 @@ _ipamjm.cff: src/ipamjm.ttf
 _features: src/ipamjm.ttf
 	sh bin/makefeatures.sh > _features
 
-#fontMenuNameDB: src/fontinfo.txt
-#	sh bin/makefontMenuNameDB.sh < src/fontinfo.txt > fontMenuNameDB
-#	TODO
+_fontMenuNameDB: src/fontinfo.txt
+	sh bin/makefontMenuNameDB.sh < src/fontinfo.txt > _fontMenuNameDB
 
 .PHONY: clean
 clean:
-	rm -f _features _gid2glyph.dat _gid2mj.dat _ipamjm.cff _ipamjm2048.cff _kanji.map _min.map _mj2glyph.dat _nishiki.cff _regular.cff _regular.info _regular.name _regular.otf _sammin.cff _uni2cid.dat _uregular.cff current.fpr $(REGULAR).otf
+	rm -f _features _fontMenuNameDB _gid2glyph.dat _gid2mj.dat _ipamjm.cff _ipamjm2048.cff _kanji.map _min.map _mj2glyph.dat _nishiki.cff _regular.cff _regular.info _regular.name _regular.otf _sammin.cff _uni2cid.dat _uregular.cff current.fpr $(REGULAR).otf
