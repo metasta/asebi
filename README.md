@@ -16,7 +16,7 @@
 3. `make`
 
 ## ライセンス
-馬酔木明朝は「派生プログラム」に該当しますので、 [IPA フォントライセンス v1.0](http://ipafont.ipa.go.jp/ipa_font_license_v1.html) が適用されます。一方、馬酔木明朝生成スクリプトは MIT ライセンスのもとで公開します。
+馬酔木明朝はIPAmj明朝の「派生プログラム」に該当しますので、 [IPA フォントライセンス v1.0](http://ipafont.ipa.go.jp/ipa_font_license_v1.html) が適用されます。一方、馬酔木明朝生成スクリプトは MIT ライセンスのもとで公開します。
 
 ## 改訂履歴
 
