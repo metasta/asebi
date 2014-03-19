@@ -84,8 +84,8 @@ _ipamjm.cff: src/ipamjm.ttf
 	tx -cff src/ipamjm.ttf _ipamjm2048.cff
 	IS -cff _ipamjm2048.cff _ipamjm.cff
 
-_features: src/ipamjm.ttf
-	sh bin/makefeatures.sh > _features
+_features: src/ipamjm.ttf src/fontinfo.txt
+	sh bin/makefeatures.sh < src/fontinfo.txt > _features
 
 _fontMenuNameDB: src/fontinfo.txt
 	sh bin/makefontMenuNameDB.sh < src/fontinfo.txt > _fontMenuNameDB

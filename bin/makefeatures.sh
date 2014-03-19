@@ -1,7 +1,6 @@
 #!/bin/sh -
 basedir=$(cd $(dirname "$0"); dirname $(pwd))
 ipafont="${basedir}/src/ipamjm.ttf"
-
 test -r $ipafont || { echo "$ipafont not found" >&2; exit 1; }
 
 echo_ipacopyright()
@@ -14,7 +13,21 @@ echo_ipacopyright()
 
 IPACopyright=$(echo_ipacopyright)
 
+while read key val
+do
+  case "$key" in
+  Version )
+    version="$val"
+    ;;
+  * )
+    ;;
+  esac
+done
+
 cat <<EOT
+table head {
+  FontRevision ${version};
+} head;
 table name {
   nameid 0 "${IPACopyright}";
 } name;
