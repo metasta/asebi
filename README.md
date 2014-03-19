@@ -1,8 +1,8 @@
-# 馬酔木明朝
+# Asebi Mincho
 
 たのしい旧字フォント
 
-## つくりかた
+## Build
 
 1. 必要なもの
   - `sh`, `tr`, `sort`, `awk` などの基本 UNIX コマンド群
@@ -16,10 +16,13 @@
 
         make
 
-## ライセンス
-**馬酔木明朝**はIPAmj明朝の「派生プログラム」に該当しますので、 [IPA フォントライセンス v1.0](http://ipafont.ipa.go.jp/ipa_font_license_v1.html) が適用されます。一方、馬酔木明朝生成スクリプトは MIT ライセンスのもとで公開します。
+## License
 
-## 改訂履歴
+**馬酔木明朝**には [IPA フォントライセンス v1.0](http://ipafont.ipa.go.jp/ipa_font_license_v1.html) が適用されます。
+
+一方、フォント生成スクリプトには MIT ライセンスが適用されます。
+
+## Changelog
 
 ### 1.002 (*2014-03-19*)
 - 松・艇・慢・麗・岳・床・窓・覇・累を訂正・変更。
