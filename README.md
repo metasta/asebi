@@ -5,18 +5,20 @@
 ## つくりかた
 
 1. 必要なもの
-  - sh, tr, sort, awk などの基本 UNIX コマンド群
+  - `sh`, `tr`, `sort`, `awk` などの基本 UNIX コマンド群
   - Adobe Font Development Kit for Opentype ([www.adobe.com](http://www.adobe.com/jp/devnet/opentype/afdko.html))
   - Python3
   - Ruby
-2. src ディレクトリに以下のフォントを入れる
+2. `src` ディレクトリに以下のフォントを入れる
   - sammin.otf ([三番明朝 - www.akenotsuki.com](http://www.akenotsuki.com/eyeben/font/sammin.html))
   - nishiki.otf ([錦明朝かな - www.akenotsuki.com](http://www.akenotsuki.com/eyeben/font/nishiki_kana.html))
   - ipamjm.ttf ([IPAmj明朝 - mojikiban.ipa.go.jp](http://mojikiban.ipa.go.jp/1300.html))
-3. `make`
+3. `make` して完成
+
+        make
 
 ## ライセンス
-馬酔木明朝はIPAmj明朝の「派生プログラム」に該当しますので、 [IPA フォントライセンス v1.0](http://ipafont.ipa.go.jp/ipa_font_license_v1.html) が適用されます。一方、馬酔木明朝生成スクリプトは MIT ライセンスのもとで公開します。
+**馬酔木明朝**はIPAmj明朝の「派生プログラム」に該当しますので、 [IPA フォントライセンス v1.0](http://ipafont.ipa.go.jp/ipa_font_license_v1.html) が適用されます。一方、馬酔木明朝生成スクリプトは MIT ライセンスのもとで公開します。
 
 ## 改訂履歴
 
