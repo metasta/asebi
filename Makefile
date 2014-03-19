@@ -60,7 +60,7 @@ _min.map:
 #	TODO
 
 _kanji.map: _uni2cid.dat _mj2glyph.dat src/ipamjm.txt
-	ruby bin/makekanjimap.rb _uni2cid.dat _mj2glyph.dat < src/ipamjm.txt > _kanji.map
+	python3 bin/makekanjimap.py _uni2cid.dat _mj2glyph.dat < src/ipamjm.txt > _kanji.map
 
 _uni2cid.dat: src/sammin.otf
 	sh bin/cmap.sh src/sammin.otf > _uni2cid.dat
