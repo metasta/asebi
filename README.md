@@ -1,6 +1,8 @@
 # Asebi Mincho
 
-たのしい旧字フォント
+たのしい旧字フォント。
+
+フォントのダウンロードは[馬酔木明朝](https://dl.dropboxusercontent.com/u/68753704/japanese/asebi.html)のサイトから。
 
 ## Build
 
@@ -18,9 +20,9 @@
 
 ## License
 
-**馬酔木明朝**には [IPA フォントライセンス v1.0](http://ipafont.ipa.go.jp/ipa_font_license_v1.html) が適用されます。
+MIT ライセンスのもとで公開します。
 
-一方、フォント生成スクリプトには MIT ライセンスが適用されます。
+（生成されるフォントには [IPA フォントライセンス v1.0](http://ipafont.ipa.go.jp/ipa_font_license_v1.html) が適用されます）
 
 ## Changelog
 

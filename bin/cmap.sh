@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -
 test -r "$1" || { echo "usage: $0 font.otf"; exit 1; }
 
 spot -t cmap "$1" \
