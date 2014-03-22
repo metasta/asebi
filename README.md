@@ -1,8 +1,8 @@
 # Asebi Mincho
 
-たのしい旧字フォント。
+たのしい旧字フォント
 
-フォントのダウンロードは[馬酔木明朝](https://dl.dropboxusercontent.com/u/68753704/japanese/asebi.html)のサイトから。
+フォントは[馬酔木明朝のサイト](https://dl.dropboxusercontent.com/u/68753704/japanese/asebi.html)からダウンロードできます
 
 ## Build
 
@@ -14,7 +14,8 @@
   - sammin.otf ([三番明朝 - www.akenotsuki.com](http://www.akenotsuki.com/eyeben/font/sammin.html))
   - nishiki.otf ([錦明朝かな - www.akenotsuki.com](http://www.akenotsuki.com/eyeben/font/nishiki_kana.html))
   - ipamjm.ttf ([IPAmj明朝 - mojikiban.ipa.go.jp](http://mojikiban.ipa.go.jp/1300.html))
-3. `make` して完成
+3. `src/ipamjm.txt` を適宜改訂する
+4. `make` して完成
 
         make
 
