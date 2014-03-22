@@ -24,7 +24,7 @@ _regular.cff: _regular.info _min.map _sammin.cff _kanji.map _ipamjm.cff nishiki1
 	_min.map _sammin.cff \
 	_kanji.map _ipamjm.cff \
 	nishiki1.222.map _nishiki.cff \
-	_sammin.cff
+	_sammin.cff 2> /dev/null
 	tx -cff _uregular.cff _regular.cff
 
 #_bold.cff: _bold.info _min.map _sammin.cff _kanji.map _ipamjm.cff nishiki1.222.map _nishiki.cff
@@ -75,13 +75,13 @@ _gid2glyph.dat: src/ipamjm.ttf
 	sh bin/makemap-gid2glyph.sh > _gid2glyph.dat
 
 _sammin.cff: src/sammin.otf
-	tx -cff src/sammin.otf _sammin.cff
+	tx -cff src/sammin.otf _sammin.cff 2> /dev/null
 
 _nishiki.cff: src/nishiki.otf
-	tx -cff src/nishiki.otf _nishiki.cff
+	tx -cff src/nishiki.otf _nishiki.cff 2> /dev/null
 
 _ipamjm.cff: src/ipamjm.ttf
-	tx -cff src/ipamjm.ttf _ipamjm2048.cff
+	tx -cff src/ipamjm.ttf _ipamjm2048.cff 2> /dev/null
 	IS -cff _ipamjm2048.cff _ipamjm.cff
 
 _features: src/ipamjm.ttf src/fontinfo.txt
