@@ -25,7 +25,7 @@ _regular.cff: _regular.info _min.map _sammin.cff _kanji.map _ipamjm.cff nishiki1
 	_kanji.map _ipamjm.cff \
 	nishiki1.222.map _nishiki.cff \
 	_sammin.cff 2> /dev/null
-	tx -cff _uregular.cff _regular.cff
+	tx -cff _uregular.cff _regular.cff 2> /dev/null
 
 #_bold.cff: _bold.info _min.map _sammin.cff _kanji.map _ipamjm.cff nishiki1.222.map _nishiki.cff
 #	mergeFonts -cid _bold.info _ubold.cff \
