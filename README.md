@@ -14,7 +14,11 @@
   - sammin.otf ([三番明朝 - www.akenotsuki.com](http://www.akenotsuki.com/eyeben/font/sammin.html))
   - nishiki.otf ([錦明朝かな - www.akenotsuki.com](http://www.akenotsuki.com/eyeben/font/nishiki_kana.html))
   - ipamjm.ttf ([IPAmj明朝 - mojikiban.ipa.go.jp](http://mojikiban.ipa.go.jp/1300.html))
-3. `src/ipamjm.txt` を適宜改訂する
+3. `src/ipamjm.txt` を適宜改訂する。以下を駆使する
+  - Mac OS X の「文字ビューア」
+  - [glyphwiki](http://glyphwiki.org/)
+  - [IPA MJ 文字情報検索システム(簡易版)](http://mojikiban.ipa.go.jp/search/SearchCode.html)
+  - [梅雨空文庫 - 実験室1](http://home.q02.itscom.net/tosyokan/JIKKEN1.txt)の資料
 4. `make` して完成
 
         % make
