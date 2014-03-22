@@ -17,7 +17,7 @@
 3. `src/ipamjm.txt` を適宜改訂する
 4. `make` して完成
 
-        make
+        % make
 
 ## License
 
