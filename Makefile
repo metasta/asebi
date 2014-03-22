@@ -82,7 +82,7 @@ _nishiki.cff: src/nishiki.otf
 
 _ipamjm.cff: src/ipamjm.ttf
 	tx -cff src/ipamjm.ttf _ipamjm2048.cff 2> /dev/null
-	IS -cff _ipamjm2048.cff _ipamjm.cff
+	IS -cff -z2 _ipamjm2048.cff _ipamjm.cff
 
 _features: src/ipamjm.ttf src/fontinfo.txt
 	sh bin/makefeatures.sh < src/fontinfo.txt > _features
