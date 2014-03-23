@@ -2,7 +2,7 @@
 
 たのしい旧字フォント
 
-フォントは[馬酔木明朝のサイト](https://dl.dropboxusercontent.com/u/68753704/japanese/asebi.html)からダウンロードできます
+フォントは[馬酔木明朝のサイト](https://metasta.github.io/asebi/)からダウンロードできます
 
 ## Build
 
