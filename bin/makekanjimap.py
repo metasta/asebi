@@ -20,11 +20,16 @@ for line in sys.stdin:
 		if kanji.startswith('U+'):
 			pass  # cannot interpret 'U+xxxx' form yet
 		elif len(kanji) == 1:
-			cid = u2cmap[str(ord(kanji))]
-			glyph = m2gmap[mj]
-			d[cid] = glyph
+			decimal = str(ord(kanji))
+			if decimal in u2cmap and mj in m2gmap:
+				cid = u2cmap[decimal]
+				glyph = m2gmap[mj]
+				d[cid] = glyph
+			else:
+				sys.stderr.write(kanji + mj + " < error\n")
+				status = 1
 		else:
-			sys.stderr.write(kanji + mj + " < error")
+			sys.stderr.write(kanji + mj + " < error\n")
 			status = 1
 
 print("mergeFonts")
