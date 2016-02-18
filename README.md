@@ -17,7 +17,7 @@
 3. `src/ipamjm.txt` を適宜改訂する。以下を駆使する
   - Mac OS X の「文字ビューア」
   - [glyphwiki](http://glyphwiki.org/)
-  - [IPA MJ 文字情報検索システム(簡易版)](http://mojikiban.ipa.go.jp/search/SearchCode.html)
+  - [IPA MJ 文字情報検索システム(簡易版)](http://mojikiban.ipa.go.jp/search/)
   - [梅雨空文庫 - 実験室1](http://home.q02.itscom.net/tosyokan/JIKKEN1.txt)の資料
 4. `make` して完成
 
