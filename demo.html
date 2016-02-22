@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>馬酔木明朝 デモ</title>
+<link id="webfont" href="https://ss1.xrea.com/metasta.s602.xrea.com/Asebi.css">
+<style>
+@charset "utf-8";
+html,body {
+ height: 100%; margin:0;
+}
+body {
+ -webkit-text-size-adjust:100%;
+ font: 12pt/1.8 sans-serif;
+}
+#container {
+ box-sizing:border-box;
+ height: 100%;
+ margin:0;
+ padding: 100px 0 25px;
+}
+h1,nav,footer {
+ box-sizing:border-box;
+ position: absolute;
+ left:0;
+ width: 100%;
+}
+h1{
+ top:0;
+ height:75px;
+ padding-left: 8px;
+}
+nav {
+ top:75px;
+ height:25px;
+ padding-left:8px;
+ padding-bottom: 4px;
+}
+footer {
+ bottom:0;
+ height: 25px;
+ text-align:center;
+ color:#888;
+}
+main {
+ display:border-box;
+ height: 100%;
+}
+textarea {
+ box-sizing:border-box;
+ width:100%;
+ height:100%;
+ resize:none;
+ font-family:Asebi;
+ font-size: 17pt; /* initial value */
+}
+select {
+ vertical-align: middle;
+}
+a:link,
+a:visited {
+ color: #a96;
+ text-decoration: none;}
+</style>
+<script>
+function fontsize(){
+ var s = document.getElementById('size');
+ var i = s.selectedIndex;
+ document.getElementById('area').style.fontSize = s.options[i].text;
+}
+</script>
+<div id="container">
+<h1>馬酔木明朝 デモ</h1>
+<nav>
+Web フォントを利用しています。
+<select id="size" onChange="fontsize()">
+<option>9pt
+<option>10pt
+<option>11pt
+<option>12pt
+<option>14pt
+<option selected>17pt
+<option>21pt
+<option>25pt
+<option>30pt
+<option>36pt
+<option>43pt
+</select>
+</nav>
+<main><textarea id="area" placeholder="テキストを入力"></textarea></main>
+<footer><small>&copy;2016 metasta</small></footer>
+</div>
+<script>document.getElementById('webfont').rel = 'stylesheet';</script>
