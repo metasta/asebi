@@ -1,5 +1,7 @@
 <link id="webfont" href="https://ss1.xrea.com/metasta.s602.xrea.com/Asebi.css">
-<style>.asebi {font-family:Asebi;font-size:12pt}</style>
+<style>
+.asebi {font-family:Asebi;font-size:12pt}
+</style>
 # 「馬酔木明朝」使用上の注意
 
 ## 弁・欠・予・余・芸の 5 字について
