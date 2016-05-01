@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'NotoSansDemiLightSubset';
+    src: url('NotoSansDemiLightSubset.woff') format('woff'),
+         url('NotoSansDemiLightSubset.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
