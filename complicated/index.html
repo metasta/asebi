@@ -30,6 +30,13 @@ a:link,a:active,a:visited {
 a:hover {
 	text-decoration:underline;
 }
+#breadcrumb li {
+	display:inline;
+	list-style-type:none;
+}
+#breadcrumb li:not(:first-child):before {
+	content: ' > ';
+}
 table {
 	display:inline-table;
 }
@@ -45,6 +52,12 @@ p.update {
 }
 </style>
 <main>
+<nav id="menu">
+<ul id="breadcrumb">
+<li><a href="..">馬酔木明朝</a>
+<li><a href=".">ワケあり表示確認</a>
+</ul>
+</nav>
 <h1>ワケあり表示確認</h1>
 <p class="update">2016.05.03 更新</p>
 <p>「もとは別字だった異体字」や「もとは俗字だった別字」など、こみいった事情のある漢字をあつめ、馬酔木明朝でどう表示されるか確認するためのページ。</p>
