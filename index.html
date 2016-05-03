@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="AsebiSubset-Sakura.css">
 <link rel="stylesheet" href="AsebiSubset.css">
 <link rel="stylesheet" href="NotoSansDemiLightSubset.css">
+<link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
 <style>
 html {
 	font:12pt/1.8 'heisei-mincho-std','Hiragino Mincho ProN',serif;
@@ -42,14 +43,20 @@ a:link,a:active,a:visited {
 	text-shadow:0 0 1px rgba(119,85,34,.2);
 }
 a:hover {
-  text-decoration:underline;
+	text-decoration:underline;
 }
 rt {
-  font-size:50%;
+	font-size:50%;
 }
+
+/* begin centering trick */
+#ex-wrapper {display:table;width:100%;}
+#wrapper    {display:table-cell;text-align:center;}
+#demo       {display:inline-block;text-align:left;}
+/* end centering trick */
+
 #demo {
-	margin:0 auto;
-	min-height:9em;
+	white-space:nowrap;
 	font-size:32pt;
 	        writing-mode:tb-rl;      /* IE */
 	-webkit-writing-mode:vertical-rl; /* Safari */
@@ -58,9 +65,9 @@ rt {
 #demo cite {
 	display:block;
 	margin:0 1em;
+	text-align:right;
 	font-style:normal;
 	font-size:12pt;
-	text-align:right;
 }
 nav {
 	display:flex;
@@ -144,7 +151,8 @@ footer {
 </style>
 <main>
 
-
+<div id="ex-wrapper">
+<div id="wrapper">
 <blockquote id="demo">
 <cite style="visibility:hidden">岡本かの子『桜』より</cite>
 <span class="asebisakura">
@@ -154,7 +162,8 @@ footer {
 </span>
 <cite>岡本かの子『桜』より</cite>
 </blockquote>
-
+</div>
+</div>
 
 <h2 id="concept" style="visibility:hidden">馬酔木明朝とは</h2>
 <p>　馬酔木明朝は旧字明朝体フォントです。コンピュータ上の文章を旧字で読みたい、あるいは自分で書いた文章を旧字で表示したい、そんな旧字好きの方へ。</p>
