@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'AsebiSubset-Complicated';
+    src: url('AsebiSubset-Complicated.woff') format('woff'),
+         url('AsebiSubset-Complicated.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
