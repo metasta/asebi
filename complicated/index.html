@@ -30,11 +30,16 @@ a:link,a:active,a:visited {
 a:hover {
 	text-decoration:underline;
 }
-#breadcrumb li {
+ul#breadcrumb {
+	margin:0;
+	padding:0;
+	font-size:9pt;
+}
+ul#breadcrumb li {
 	display:inline;
 	list-style-type:none;
 }
-#breadcrumb li:not(:first-child):before {
+ul#breadcrumb li:not(:first-child):before {
 	content: ' > ';
 }
 table {
