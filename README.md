@@ -15,6 +15,7 @@
   - nishiki.otf ([錦明朝かな - www.akenotsuki.com](http://www.akenotsuki.com/eyeben/font/nishiki_kana.html))
   - ipamjm.ttf ([IPAmj明朝 - mojikiban.ipa.go.jp](http://mojikiban.ipa.go.jp/1300.html))
 3. `src/ipamjm.txt` を適宜改訂する。以下を駆使する
+  - [新字源字形表](https://github.com/metasta/shinjigen-glyph)
   - Mac OS X の「文字ビューア」
   - [glyphwiki](http://glyphwiki.org/)
   - [IPA MJ 文字情報検索システム(簡易版)](http://mojikiban.ipa.go.jp/search/)
@@ -30,6 +31,13 @@ MIT ライセンスのもとで公開します
 （生成されるフォントには [IPA フォントライセンス v1.0](http://ipafont.ipa.go.jp/ipa_font_license_v1.html) が適用されます）
 
 ## Changelog
+
+### 1.009 (*2016-05-08*)
+- **床**・**携**・**渋**・**覇**の処理を変更（新字源準拠）
+- **痺**の処理を変更（痺→痹）
+- 御・柊・識・薀を旧字に修正
+- 內・吿・尙・彥・巹・彍・搒・构・蓮・閱・鼔が空白になる問題を修正
+- 卺の不適切な字形変更を解除
 
 ### 1.008 (*2016-05-03*)
 - **亘**の処理を変更 (亘→**亙**)
