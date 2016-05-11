@@ -14,7 +14,7 @@
   - sammin.otf ([三番明朝 - www.akenotsuki.com](http://www.akenotsuki.com/eyeben/font/sammin.html))
   - **otagi.otf** ([愛宕明朝 - www.akenotsuki.com](http://www.akenotsuki.com/eyeben/font/otagi.html)) ← v1.009 以前とは異なる
   - ipamjm.ttf ([IPAmj明朝 - mojikiban.ipa.go.jp](http://mojikiban.ipa.go.jp/1300.html))
-3. `src/ipamjm.txt` を適宜改訂する。以下を駆使する
+3. `kyuji-map-*.txt` を適宜改訂する。以下を駆使する
   - [新字源字形表](https://github.com/metasta/shinjigen-glyph)
   - [glyphwiki](http://glyphwiki.org/)
   - [IPA MJ 文字情報検索システム(簡易版)](http://mojikiban.ipa.go.jp/search/)
