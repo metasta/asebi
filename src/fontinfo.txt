@@ -1,5 +1,0 @@
-# fontinfo.txt
-PSName AsebiMin
-FontName Asebi Mincho
-FontNameJa 馬酔木明朝
-Version	1.009

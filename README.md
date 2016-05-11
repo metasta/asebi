@@ -1,4 +1,4 @@
-# Asebi Mincho
+# Asebi Mincho Maker
 
 たのしい旧字フォント作り
 
@@ -12,11 +12,10 @@
   - Adobe Font Development Kit for Opentype ([www.adobe.com](http://www.adobe.com/jp/devnet/opentype/afdko.html))
 2. `src` ディレクトリに以下のフォントを入れる
   - sammin.otf ([三番明朝 - www.akenotsuki.com](http://www.akenotsuki.com/eyeben/font/sammin.html))
-  - nishiki.otf ([錦明朝かな - www.akenotsuki.com](http://www.akenotsuki.com/eyeben/font/nishiki_kana.html))
+  - **otagi.otf** ([愛宕明朝 - www.akenotsuki.com](http://www.akenotsuki.com/eyeben/font/otagi.html)) ← v1.009 以前とは異なる
   - ipamjm.ttf ([IPAmj明朝 - mojikiban.ipa.go.jp](http://mojikiban.ipa.go.jp/1300.html))
 3. `src/ipamjm.txt` を適宜改訂する。以下を駆使する
   - [新字源字形表](https://github.com/metasta/shinjigen-glyph)
-  - Mac OS X の「文字ビューア」
   - [glyphwiki](http://glyphwiki.org/)
   - [IPA MJ 文字情報検索システム(簡易版)](http://mojikiban.ipa.go.jp/search/)
   - [梅雨空文庫 - 実験室1](http://home.q02.itscom.net/tosyokan/JIKKEN1.txt)の資料
@@ -26,11 +25,15 @@
 
 ## License
 
-MIT ライセンスのもとで公開します
+この馬酔木明朝作成用プログラムを MIT ライセンスのもとで公開します
 
 （生成されるフォントには [IPA フォントライセンス v1.0](http://ipafont.ipa.go.jp/ipa_font_license_v1.html) が適用されます）
 
 ## Changelog
+
+### 1.010 (*2016-05-11*)
+- 英数字・記号等の書体を変更（三番明朝（IPAex明朝由来）→ 愛宕明朝（錦明朝かな由来））
+- ウェイトの表記を Regular から Light に変更（実際の字の太さには変更なし）
 
 ### 1.009 (*2016-05-08*)
 - **床**・**携**・**渋**・**覇**の処理を変更（新字源準拠）

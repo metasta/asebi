@@ -1,14 +1,13 @@
 #!/bin/sh -
+#
+# usage: make-cidfontinfo.sh path/to/fontinfo.txt > cidfontinfo
+#
+#       asebi.CFF の作成に必要な cidfontinfo ファイルを生成する。
+# 
 
-case "$1" in
-  Regular | Bold )
-    weight="$1"
-    ;;
-  * )
-    echo "usage: $0 [ Regular | Bold ]" >&2;
-    exit 1
-    ;;
-esac
+fontinfo="$1"
+
+test -r "$fontinfo" || { echo "$fontinfo not found" >&2; exit 1; }
 
 while read key val
 do
@@ -24,19 +23,22 @@ do
   Version )
     version="$val"
     ;;
+  Weight )
+    weight="$val"
+    ;;
   * )
     ;;
   esac
-done
+done < "$fontinfo"
 
-cat <<EOT
+cat <<__EOT__
 FontName       (${psname}-${weight})
 FullName       (${fontname} ${weight})
 FamilyName     (${fontname})
 Weight         (${weight})
 version        ($version)
 Registry       (Adobe)
-Ordering       (Japan1)
-Supplement     6
+Ordering       (Identity)
+Supplement     0
 AdobeCopyright ()
-EOT
+__EOT__
