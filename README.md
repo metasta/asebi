@@ -3,7 +3,7 @@
 [馬酔木明朝](https://metasta.github.io/asebi/)は以下のフォントを合成して作られた旧字明朝体フォントです。
 - IPAmj明朝 - 旧字（約2000字）
 - 三番明朝 - 旧字以外の漢字
-- 愛宕明朝 - アルファベット、数字、かな、記号等
+- 愛宕明朝 - かな、英数字、記号類
 
 [IPAmj明朝](http://mojikiban.ipa.go.jp/1300.html)
 [三番明朝](http://www.akenotsuki.com/eyeben/fonts/sammin.html)
