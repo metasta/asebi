@@ -1,5 +1,5 @@
 #!/bin/sh -
-# usage: make-db-uni2cid sammin.otf > db
+# usage: sh uni2cid.sh sammin.otf
 #
 #	unicode から cid へのマッピング即ち cmap。
 
