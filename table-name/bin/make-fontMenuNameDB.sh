@@ -3,7 +3,6 @@
 # usage: make-fontMenuNameDB.sh path/to/fontinfo.txt > fontMenuNameDB
 #
 #	asebi.name の作成に必要な fontMenuNameDB ファイルを生成する。
-#	実行に python3 が必要。
 
 fontinfo="$1"
 test -r "$fontinfo" || { echo "$fontinfo not found" >&2; exit 1; }
