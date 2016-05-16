@@ -55,7 +55,7 @@ vmtx/otagi.txt: vmtx/otagi.ttx
 	awk -F'"' '/<mtx /{print $$2,$$4,$$6}' vmtx/otagi.ttx \
 	| sort \
 	> vmtx/otagi.txt
-	
+
 hmtx/otagi.ttx: ../src/otagi.otf
 	ttx -t hmtx -o hmtx/otagi.ttx ../src/otagi.otf
 

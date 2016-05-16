@@ -20,11 +20,11 @@
 # これらのグリフのための修正は不要と判断した。
 #
 # cmap 差分確認用コマンド
-# % sh cmap.sh sammin.otf | sort > sammin.cmap 
-# % sh cmap.sh otagi.otf | sort > otagi.cmap 
+# % sh cmap.sh sammin.otf | sort > sammin.cmap
+# % sh cmap.sh otagi.otf | sort > otagi.cmap
 # % join sammin.cmap otagi.cmap | while read cid codesam codeota
 # do
-# if [ "x$codesam" != "x$codeota" ] 
+# if [ "x$codesam" != "x$codeota" ]
 # then
 # echo "$cid      $codesam        $codeota"
 # fi

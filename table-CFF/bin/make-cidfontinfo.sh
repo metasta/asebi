@@ -3,7 +3,7 @@
 # usage: make-cidfontinfo.sh path/to/fontinfo.txt > cidfontinfo
 #
 #       asebi.CFF の作成に必要な cidfontinfo ファイルを生成する。
-# 
+#
 
 fontinfo="$1"
 

@@ -3,7 +3,7 @@
 # usage: make-cidfontinfo-aj10.sh path/to/fontinfo.txt > cidfontinfo-aj10
 #
 #       asebiname.CFF の作成に必要な cidfontinfo-aj10 ファイルを生成する。
-# 
+#
 
 fontinfo="$1"
 

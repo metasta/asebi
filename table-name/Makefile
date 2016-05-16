@@ -23,4 +23,4 @@ fontMenuNameDB: ../fontinfo.txt
 
 clean:
 	-rm -f asebi.name asebi.otf asebiname.CFF asebiname.CFF.tmp \
-	current.fpr cidfontinfo-aj10 features fontMenuNameDB otagi.CFF 
+	current.fpr cidfontinfo-aj10 features fontMenuNameDB otagi.CFF

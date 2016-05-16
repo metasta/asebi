@@ -3,7 +3,7 @@
 # usage: make-features.sh path/to/fontinfo.txt path/to/ipamjm.ttf > features
 #
 #       asebi.name の作成に必要な features ファイルを生成する。
-# 
+#
 
 fontinfo="$1"
 ipamjmin="$2"

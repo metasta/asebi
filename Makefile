@@ -31,7 +31,7 @@ asebi_vmtx.ttx:
 .PHONY: clean
 clean:
 	-rm -f AsebiMin-Light.otf asebi.name asebi.CFF asebi.cmap \
-		asebi_hmtx.ttx asebi_vmtx.ttx asebi_hmtx.otf asebi_nomtx.otf 
+		asebi_hmtx.ttx asebi_vmtx.ttx asebi_hmtx.otf asebi_nomtx.otf
 	cd kanji-table && $(MAKE) clean
 	cd table-CFF  && $(MAKE) clean
 	cd table-cmap && $(MAKE) clean
