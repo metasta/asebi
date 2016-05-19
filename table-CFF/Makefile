@@ -7,7 +7,7 @@ asebi.CFF: cidfontinfo kanji.map ipamjm.CFF otagi.map otagi.CFF sammin-kanji.map
 	mergeFonts -cid cidfontinfo xasebiU.CFF \
 		kanji.map ipamjm.CFF \
 		otagi.map otagi.CFF \
-		sammin.CFF
+		sammin.CFF 2>/dev/null
 	tx -cff xasebiU.CFF asebi.CFF 2>/dev/null
 
 cidfontinfo: ../fontinfo.txt
