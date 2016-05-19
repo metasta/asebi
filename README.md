@@ -8,11 +8,10 @@
 
 1. 必要なもの
   - `sh`, `tr`, `sort`, `awk` などの基本 UNIX コマンド群
-  - Python3
   - Adobe Font Development Kit for Opentype ([www.adobe.com](http://www.adobe.com/jp/devnet/opentype/afdko.html))
 2. `src` ディレクトリに以下のフォントを入れる
   - sammin.otf ([三番明朝 - www.akenotsuki.com](http://www.akenotsuki.com/eyeben/font/sammin.html))
-  - **otagi.otf** ([愛宕明朝 - www.akenotsuki.com](http://www.akenotsuki.com/eyeben/font/otagi.html)) ← v1.009 以前とは異なる
+  - otagi.otf ([愛宕明朝 - www.akenotsuki.com](http://www.akenotsuki.com/eyeben/font/otagi.html))
   - ipamjm.ttf ([IPAmj明朝 - mojikiban.ipa.go.jp](http://mojikiban.ipa.go.jp/1300.html))
 3. `kyuji-map-*.txt` を適宜改訂する。以下を駆使する
   - [新字源字形表](https://github.com/metasta/shinjigen-glyph)
