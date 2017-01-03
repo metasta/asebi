@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="description" content="なぜ私は馬酔木明朝を必要としたか">
+<meta name="viewport" content="initial-scale=0.9">
+<title>なぜ私は馬酔木明朝を必要としたか</title>
+<link rel="stylesheet" href="/normalize.css">
+<link rel="stylesheet" href="AsebiSubset-Sakura.css">
+<link rel="stylesheet" href="AsebiSubset.css">
+<link rel="stylesheet" href="NotoSansDemiLightSubset.css">
+<link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+<style>
+html {
+	font:12pt/1.8 'Hiragino Mincho ProN','游明朝','YuMincho','heisei-mincho-std',serif;
+}
+body {
+	background:#8a6;
+}
+main {
+	box-sizing:border-box;
+	border:2em solid #fff;
+	margin:0 auto;
+	max-width:960px;
+	height:100%;
+	background:#fff;
+}
+h2,h3 {
+	font-weight:normal;
+}
+h3 {
+	font-size:100%;
+	text-indent: 1em;
+}
+p {
+	display:inline;
+}
+p:after {
+	content:'\A';
+	white-space:pre-wrap;
+}
+a:link,a:active,a:visited {
+	color:#752;
+	text-decoration:none;
+	text-shadow:0 0 1px rgba(119,85,34,.2);
+}
+a:hover {
+	text-decoration:underline;
+}
+rt {
+	font-size:50%;
+}
+
+/* begin centering trick */
+#ex-wrapper {display:table;width:100%;}
+#wrapper    {display:table-cell;text-align:center;}
+#demo       {display:inline-block;text-align:left;}
+/* end centering trick */
+
+#demo {
+	margin:0;
+	white-space:nowrap;
+	font-size:32pt;
+	        writing-mode:tb-rl;      /* IE */
+	-webkit-writing-mode:vertical-rl; /* Safari */
+	        writing-mode:vertical-rl;
+}
+#demo cite {
+	display:block;
+	margin:0 1em;
+	text-align:right;
+	font-style:normal;
+	font-size:12pt;
+}
+nav {
+	display:flex;
+	flex-direction:row-reverse;
+	justify-content:space-between;
+	align-items:center;
+}
+@media screen and (max-width:768px){
+	nav {
+		flex-direction:column;
+		align-items:stretch;
+	}
+}
+#download {
+	display:block;
+	margin:1em 0;
+	padding:3em;
+	border-radius:5px;
+	color:#fff;
+	background:#888;
+	transition:.4s ease;
+	font-family:'NotoSansDemiLightSubset',sans-serif;
+	text-align:center;
+	text-decoration:none;
+}
+#download:hover {
+	background:#b23;
+}
+.size {
+	white-space:nowrap;
+	overflow:auto;
+}
+.size table {
+	width:100%;
+}
+.size th {
+	font-family:'NotoSansDemiLightSubset',sans-serif;
+	font-size:8pt;
+	font-weight:300;
+	color: #aaa;
+	text-align:right;
+	vertical-align:bottom;
+}
+.size td {
+	white-space:nowrap;
+}
+.contrast {
+	display:flex;
+	flex-direction: row;
+	font-size:15px;
+}
+@media screen and (max-width:768px){
+	.contrast {
+		flex-direction:column;
+	}
+}
+.contrast p {
+	display:block;
+	margin: 15px 25px;
+	line-height:1.5;
+}
+.contrast p:after {
+	content: "";
+}
+footer {
+	margin-top:5em;
+	font-family:'NotoSansDemiLightSubset',sans-serif;
+	font-size:9pt;
+	text-align:center;
+	color:#888;
+}
+.asebi {
+	font-family:'AsebiSubset','Hiragino Mincho ProN',serif;
+}
+.asebisakura {
+	font-family:'AsebiSubset-Sakura','Hiragino Mincho ProN',serif;
+}
+.big {
+	font-size: 180%;
+}
+</style>
+<main>
+
+<h2 id="concept">なぜ私は馬酔木明朝を必要としたか</h2>
+<p>　馬酔木（あせび）明朝は旧字明朝体フォントです。コンピュータ上の文章を旧字で読みたい、あるいは自分で書いた文章を旧字で表示したい、そんな旧字好きの方へ。</p>
+<h2 id="faq">よくある質問</h2>
+<dl>
+<dt>　馬酔木ゴシックはあるのか。
+<dd>　旧字形データの抽出元である「<a href="http://mojikiban.ipa.go.jp/1300.html">IPAmj明朝</a>」にゴシック版がないため、今のところ馬酔木ゴシックの予定はありません。
+<dt>　馬酔木明朝ボールドはあるのか。
+<dd>　同じく「<a href="http://mojikiban.ipa.go.jp/1300.html">IPAmj明朝</a>」にボールドがないため、今のところ馬酔木明朝ボールドの予定はありません。何らかの方法で太字を自動生成できるとよいのですが。
+<dt>　間違った字が表示される。
+<dd>　<a href="https://github.com/metasta/asebi/issues">こちら</a>へ御一報ください。
+</dl>
+
+
+<h2 id="details">詳細</h2>
+<p>　馬酔木明朝は以下のフォントを合成して作られました。</p>
+<ul>
+<li><a href="http://mojikiban.ipa.go.jp/1300.html">IPAmj明朝 - mojikiban.ipa.go.jp</a> 六万字の漢字を収録するIPAフォント。旧字グリフを抽出
+<li><a href="http://www.akenotsuki.com/eyeben/font/sammin.html">三番明朝 - akenotsuki.com</a> フリーのIPA派生フォント。旧字以外の漢字を抽出
+<li><a href="http://www.akenotsuki.com/eyeben/fonts/otagi.html">愛宕明朝 - akenotsuki.com</a> フリーフォント。かな、英数字、記号類を抽出
+</ul>
+<p>　フォント作成のため作ったプログラムは <a href="https://github.com/metasta/asebi/">GitHub</a> に公開してありますので御覧ください。フォントに関する問題報告なども<a href="https://github.com/metasta/asebi/issues">こちら</a>へどうぞ。</p>
+
+
+
+<footer>&copy;2014-2016 metasta</footer>
+</main>
+<script src="https://use.typekit.net/wzu1vkp.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
