@@ -10,9 +10,8 @@
 all: kanji-table.txt
 
 kanji-table.txt: map/uni2cid.txt map/mj2gname-lsb-tsb.txt
-	sed -f bin/remove-comments.sed ../kyuji-map-*.txt \
-	| python3 bin/make-kanji-table.py map/uni2cid.txt map/mj2gname-lsb-tsb.txt \
-	| tr ' ' '\t' \
+	cat ../kyuji-map-*.txt \
+	| sh bin/make-kanji-table.sh map/uni2cid.txt map/mj2gname-lsb-tsb.txt \
 	> kanji-table.txt
 
 map/uni2cid.txt: ../src/sammin.otf

@@ -1,4 +1,4 @@
-#!/bin/awk -f
+#!/bin/sh -
 #
 # usage: fdarray-check.pl otagi.otf | make-otagi-map.sh > otagi.map
 #
